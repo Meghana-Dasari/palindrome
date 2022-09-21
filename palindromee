@@ -1,0 +1,6 @@
+string=input()
+n=string.lower()
+if n[::-1]==n:
+    print("True")
+else:
+    print("False")
