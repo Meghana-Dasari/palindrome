@@ -1,0 +1,19 @@
+def counter(list):
+    list_a = []
+    for i in range(0, len(list)):
+        item = int(list[i])
+        list_a.append(item)
+    return list_a
+    
+numbers = input().split(" ")
+N = int(numbers[0])
+K = int(numbers[1])
+A = input().split(" ")
+integer = counter(A)
+array = []
+for i in range(0, K):
+    counter = max(integer)
+    print(counter)
+    array.append(counter)
+    integer.remove(counter)
+print(sum(array))
